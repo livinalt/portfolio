@@ -1,23 +1,20 @@
-import React from 'react'
+import React from 'react';
 import './Intro.css';
-import btnImg from '../../assets/hireme.png';
-import bg from '../../assets/image.png'
+// import bg from '../../assets/image.png';
 import { Link } from 'react-scroll';
 
 const Intro = () => {
   return (
-    <section id='intro'>
-        <div className='introContent'>
-            <span className = "hello">Welcome here</span>
-            <span className = "introText">I'm <span className='introName'>Jeremiah Samuel</span> <br /> Web developer</span>
-            <p className = "introPara"> Specializing in FrontEnd Development I create high-performance <br /> web applications that fuses creativity 
-                with innovation to drive business success</p>
-            <Link><button className='btn'><img src= {btnImg} alt="" className='btnImg'/> Hire Me</button></Link>
-        </div>
-        <img src = {bg} alt = "Profile" className='bg' />
-        
-        </section>
+    <section id='intro' className='intro-container'>
+      <div className='introContent'>
+        <span className="hello">Hello</span><br/>
+        <span className="introText">I'm <span className='introName'>Jeremiah Samuel</span> <br /> FrontEnd | Web3 developer </span>
+        <p className="introPara"> Specialize in FrontEnd Development while creating high-performance <br/>web applications to drive business success</p>
+        <Link to="contact" smooth={true} offset={-100} duration={500}><button className='btn'> Hire Me</button></Link>
+      </div>
+      {/* <img src={bg} alt="Profile" className='bg' /> */}
+    </section>
   )
 }
 
-export default Intro
+export default Intro;
