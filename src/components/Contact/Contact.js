@@ -2,15 +2,14 @@ import React, { useRef } from 'react'
 import './Contact.css';
 import emailjs from '@emailjs/browser';
 
-import Walmart from '../../assets/walmart.png';
-import Adobe from '../../assets/adobe.png';
-import Microsoft from '../../assets/microsoft.png';
-import Facebook from '../../assets/facebook.png';
+// import Walmart from '../../assets/walmart.png';
+// import Adobe from '../../assets/adobe.png';
+// import Microsoft from '../../assets/microsoft.png';
+// import Facebook from '../../assets/facebook.png';
 
-import FacebookIcon from '../../assets/facebook-icon.png';
+import BehanceIcon from '../../assets/behance.png';
 import TwitterIcon from '../../assets/twitter.png';
-import YoutubeIcon from '../../assets/youtube.png';
-import InstagramIcon from '../../assets/instagram.png';
+import GithubIcon from '../../assets/github.png';
 
 
 const YOUR_SERVICE_ID = "service_bww9ldi";
@@ -38,20 +37,20 @@ const Contact = () => {
 
   return (
     <section id="contactPage">
-        <div className='clients'>
+        {/* <div className='clients'>
             <h1 className='contactPageTitle'>My Clients</h1>
             <p className='clientDesc'>
                 I have had the opportunity to work with a diverse group of companies.
                 Some of the notable cmpnaies I have worked with includes
             </p>
-        </div>
+        </div> */}
 
-        <div className='clientImgs'>
+        {/* <div className='clientImgs'>
             <img src = {Walmart} alt = "" className='clientImg' />
             <img src = {Adobe} alt = "" className='clientImg' />
             <img src = {Microsoft} alt = "" className='clientImg' />
             <img src = {Facebook} alt = "" className='clientImg' />
-        </div>
+        </div> */}
 
         <div className='contact'>
             <h1 className='contactPageTitle'>Contact Me</h1>
@@ -64,10 +63,10 @@ const Contact = () => {
                 <button type = "submit" value="send" className='submitBtn'>Submit</button>
 
                 <div className='links'>
-                    <img src = {FacebookIcon} alt='facebookIcon' className='link' />
-                    <img src = {TwitterIcon} alt='TwitterIcon' className='link' />
-                    <img src = {YoutubeIcon} alt='YoutubeIcon' className='link' />
-                    <img src = {InstagramIcon} alt='InstagramIcon' className='link' />
+                    <img src = {BehanceIcon} alt='BehanceIcon' className='link' />
+                    <a href="https://github.com/livinalt"><img src = {GithubIcon} alt='GithubIcon' className='link' /></a>
+                    <a href="https://twitter.com/JeremiahDSamuel"><img src = {TwitterIcon} alt='TwitterIcon' className='link' /></a>
+                    
                 </div>
             
             

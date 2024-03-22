@@ -13,6 +13,7 @@
 }
 
 .logo{
+    margin-left: 40px;
     object-fit: cover;
     height: 3rem;
     width: 4rem;    
@@ -30,6 +31,7 @@
 }
 
 .desktopMenuBtn{
+    margin-right: 40px;
     background: white;
     color: black;
     border: none;

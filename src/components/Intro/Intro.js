@@ -8,9 +8,10 @@ const Intro = () => {
   return (
     <section id='intro'>
         <div className='introContent'>
-            <span className = "hello">Hello</span>
+            <span className = "hello">Welcome here</span>
             <span className = "introText">I'm <span className='introName'>Jeremiah Samuel</span> <br /> Web developer</span>
-            <p className = "introPara">I am a skilled web developer with experience in creating <br/> and building appealing and user friendly frontend web applications</p>
+            <p className = "introPara"> Specializing in FrontEnd Development I create high-performance <br /> web applications that fuses creativity 
+                with innovation to drive business success</p>
             <Link><button className='btn'><img src= {btnImg} alt="" className='btnImg'/> Hire Me</button></Link>
         </div>
         <img src = {bg} alt = "Profile" className='bg' />
