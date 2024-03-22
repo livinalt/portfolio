@@ -27,7 +27,7 @@ The portfolio project consists of several key sections:
 - JavaScript
 
 ## Setup and Installation
-1. Clone the repository: `git clone <https://www.github.com/livinalt/portfolio>`
+1. Clone the repository: `git clone https://www.github.com/livinalt/portfolio`
 2. Navigate to the project directory: `cd portfolio-project`
 3. Install dependencies: `npm install`
 
