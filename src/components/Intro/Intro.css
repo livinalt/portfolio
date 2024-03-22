@@ -49,6 +49,9 @@
     border: none;
     border-radius: 2rem
 }
+.btn:hover{
+    background: yellow;
+}
 
 .btnImg{
     object-fit: cover;

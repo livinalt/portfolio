@@ -40,10 +40,15 @@
 .workBtn{
     margin: 3rem 0;
     padding: 0.5rem 2.5rem;
-    border: none;
+    border: yellow solid 1px;
     border-radius: 2rem;
-    background: white;
+    color: white;
     font-size: 1rem;
+}
+.workBtn:hover{
+    background: yellow;
+    color: black;
+    transition: 0.3s ease;
 }
 
 @media screen and (max-width:585px) {
