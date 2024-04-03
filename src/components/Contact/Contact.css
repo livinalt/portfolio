@@ -1,6 +1,6 @@
 #contactPage {
     min-height: calc(100vh - 4rem);
-    width: 100%;
+    width: 100vw;
     max-width: 60rem;
     margin: 0 auto;
     text-align: center;
@@ -11,6 +11,10 @@
     overflow: hidden;
   }
   
+.contact{
+  margin-left: 2rem;
+}
+
   .contactPageTitle {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -23,13 +27,13 @@
   }
   
   .contactForm {
-    margin: 1rem;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 90%;
-    max-width: 40rem; /* Adjusted max-width */
+    max-width: 40rem; 
   }
   
   .name,
@@ -50,7 +54,7 @@
     color: black;
     border: yellow 1px solid;
     border-radius: 0.5rem;
-    margin: 2rem 0; /* Adjusted margin */
+    margin: 2rem 0; 
     padding: 0.75rem 3.5rem;
   }
   
@@ -63,14 +67,14 @@
   .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centering the links */
-    margin-top: 1rem; /* Added margin */
+    justify-content: center;
+    margin-top: 1rem; 
   }
   
   .link {
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     margin: 0 0.75rem;
   }
   

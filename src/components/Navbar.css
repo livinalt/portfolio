@@ -2,6 +2,7 @@
     background: rgb(30, 30, 30);
     height: 5rem;
     width: 100vw;
+    max-width: 100rem;
     margin: 0, auto;
     padding: 1rem 2rem;
     display: flex;
@@ -10,18 +11,45 @@
     position: sticky;
     top: 0;
     z-index: 3;
+    /* overflow: hidden; */
 }
 
 .logo{
-    margin-left: 40px;
+    /* margin-left: 0px; */
     object-fit: cover;
-    height: 3rem;
-    width: 4rem;    
+    height: 2.5rem;
+    width: 2.5rem;    
+}
+
+.desktopMenu{
+    margin-left: 5rem;
+    
 }
 
 .desktopMenuListItem{
     margin: 1rem;
+    padding: 2rem;
     cursor: pointer;
+}
+
+.contactBtn{
+    background: transparent;
+    border:1px solid yellow;
+    color: yellow; 
+    border-radius: 2rem;
+    cursor: pointer; 
+    padding: 0.75rem 3rem;
+
+
+}
+
+.contactBtn:hover{
+    background: yellow;
+    color: black;
+    transition: ease 0.3s;
+   
+      
+
 }
 
 .desktopMenuListItem:hover{

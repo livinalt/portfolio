@@ -8,8 +8,8 @@ const Skill = () => {
   return (
     <section id = 'skills'>
         <span className='skillTitle'>What I do</span>
-        <span className='skillDesc'> I specialize in transforming digital ideas into reality. As a FrontEnd Developer, 
-        I craft sleek websites and user-friendly web apps, prioritizing seamless browsing experiences.</span>
+        <span className='skillDesc'> As a frontend designer and developer, I place high premium in transforming digital ideas into reality. 
+        I build mobile and web applications incorporating user experience approach for smooth user operations and meeting of clients business goals.</span>
         
 
                 <div className='skillBar'>

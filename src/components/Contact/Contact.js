@@ -37,21 +37,7 @@ const Contact = () => {
 
   return (
     <section id="contactPage">
-        {/* <div className='clients'>
-            <h1 className='contactPageTitle'>My Clients</h1>
-            <p className='clientDesc'>
-                I have had the opportunity to work with a diverse group of companies.
-                Some of the notable cmpnaies I have worked with includes
-            </p>
-        </div> */}
-
-        {/* <div className='clientImgs'>
-            <img src = {Walmart} alt = "" className='clientImg' />
-            <img src = {Adobe} alt = "" className='clientImg' />
-            <img src = {Microsoft} alt = "" className='clientImg' />
-            <img src = {Facebook} alt = "" className='clientImg' />
-        </div> */}
-
+      
         <div className='contact'>
             <h1 className='contactPageTitle'>Contact Me</h1>
             <span className='contactDesc'>Please fill out the form below to discuss any work opportunity</span>

@@ -18,10 +18,8 @@ const Navbar = () => {
         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500} className='desktopMenuListItem'>Contact</Link>
       </div>
       
-      <Link to='contact' spy={true} smooth={true} offset={-80} duration={500} className='desktopMenuBtn'>
-        <img src={contactImg} alt='' className='desktopMenuImg' />
-        Contact Me
-      </Link>
+             <Link to="contact" smooth={true} offset={-100} duration={500}><button className='contactBtn'> Contact</button></Link>
+
 
       <img src={menu} alt="mobile menu" className='mobMenu' onClick={() => setShowMenu(!showMenu)} />
       

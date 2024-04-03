@@ -1,6 +1,6 @@
 #skills {
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     max-width: 65rem;
     display: flex;
     flex-direction: column;
@@ -8,6 +8,7 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    padding-bottom:2rem;
   }
   
   .skillTitle {
@@ -35,8 +36,12 @@
   
   .skillBar {
     display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 65rem; */
+    /* width: 100vw; */
+    margin: 2rem;
+    padding: 2rem 2rem;
     border-radius: 0.5rem;
     background: rgb(50, 50, 50);
   }
@@ -51,6 +56,7 @@
   .skillBarText>p {
     font-size: 0.9rem;
     font-weight: 200;
+    
   }
   
   .skillBarText>h2 {
