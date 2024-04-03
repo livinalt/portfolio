@@ -125,4 +125,8 @@
     .desktopMenuBtn{
         display: none;
     }
+
+    .contactBtn{
+        display: none;
+    }
 }
