@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import BehanceIcon from '../../assets/behance.png';
 import TwitterIcon from '../../assets/twitter.png';
 import GithubIcon from '../../assets/github.png';
+import { toast } from 'react-toastify';
 
 const YOUR_SERVICE_ID = "service_bww9ldi";
 const YOUR_TEMPLATE_ID = "template_oav4w2h";
@@ -25,6 +26,7 @@ const Contact = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
+                    toast.success('Message sent successfully!');
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
