@@ -1,132 +1,128 @@
-.navbar{
-    background: rgb(30, 30, 30);
-    height: 5rem;
-    width: 100vw;
-    max-width: 100rem;
-    margin: 0, auto;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    /* overflow: hidden; */
+.navbar {
+  background: rgb(30, 30, 30);
+  height: 5rem;
+  width: 100vw;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
-.logo{
-    /* margin-left: 0px; */
-    object-fit: cover;
-    height: 2.5rem;
-    width: 2.5rem;    
+.logo {
+  object-fit: cover;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-.desktopMenu{
-    margin-left: 5rem;
-    
+.desktopMenu {
+  margin-left: 5rem;
 }
 
-.desktopMenuListItem{
-    margin: 1rem;
-    padding: 2rem;
-    cursor: pointer;
+.desktopMenuListItem {
+  margin: 1rem;
+  padding: 2rem;
+  cursor: pointer;
 }
 
-.contactBtn{
-    background: transparent;
-    border:1px solid yellow;
-    color: yellow; 
-    border-radius: 2rem;
-    cursor: pointer; 
-    padding: 0.75rem 3rem;
-
-
+.contactBtn {
+  background: transparent;
+  border: 1px solid yellow;
+  color: yellow;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 0.75rem 3rem;
 }
 
-.contactBtn:hover{
-    background: yellow;
-    color: black;
-    transition: ease 0.3s;
-   
-      
-
+.contactBtn:hover {
+  background: yellow;
+  color: black;
+  transition: ease 0.3s;
 }
 
-.desktopMenuListItem:hover{
-    color: yellow;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
 }
 
-.desktopMenuBtn{
-    margin-right: 40px;
-    background: yellow;
-    color: black;
-    border: none;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    padding: 0;
-    border-radius: 2rem;
-}
-.desktopMenuBtn:hover{
-    background: yellow;
+.mobMenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
 }
 
-.desktopMenuImg{
-    object-fit: cover;
-    height: 1rem;
-    width: 1rem;
-    margin: 1rem;
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
 }
 
-.active{
-    color: yellow;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
+.listItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
 }
 
-.mobMenu{
+@media screen and (max-width: 800px) {
+  .desktopMenu {
     display: none;
-    object-fit: cover;
-    height: 1.8rem;
-}
+  }
 
-.navMenu{
-    position: absolute;
-    top: 4rem;
-    right:2rem;
+  .desktopMenuBtn {
+    display: none;
+  }
+
+  .contactBtn {
+    display: none;
+  }
+
+  .mobMenu {
     display: flex;
-    flex-direction: column;
+  }
+}
+
+/* Additional media queries for different device sizes */
+@media screen and (max-width: 575px) {
+  .desktopMenuListItem,
+  .listItem {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .desktopMenu {
+    display: none;
+  }
+
+  .mobMenu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
     padding: 0.5rem;
-    height: fit-content;
-    min-width: 15rem;
-    background: rgb(40, 40, 40);
-    border-radius: 1rem;
-}
+  }
 
-.listItem{
-    color: white;
-    padding: 0.5rem 3rem;
-    margin: 0.25rem;
-    background: rgb(30, 30, 30);
-
-}
-
-@media screen and (max-width:720px){
-    .mobMenu{
-        display: flex;
-    }
-
-    .desktopMenu{
-        display: none;
-    }
-
-    .desktopMenuBtn{
-        display: none;
-    }
-
-    .contactBtn{
-        display: none;
-    }
+  .desktopMenuListItem,
+  .listItem {
+    padding: 0.5rem;
+  }
 }

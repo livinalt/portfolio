@@ -85,12 +85,11 @@
 
 @media screen and (max-width: 480px) {
   #intro {
-    margin-left: 1.5rem;
+    margin: 0 auto;
   }
 
   .intro-container {
     padding: 0 1rem;
-    
   }
 
   .hello {
@@ -104,6 +103,6 @@
 
   .introPara {
     font-size: 1.15rem;
-    margin-right: 1.5rem;
+    margin: 0 auto;
   }
 }

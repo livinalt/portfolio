@@ -3,31 +3,33 @@ import './Navbar.css';
 import logo from '../assets/j.png';
 import menu from '../assets/menu.png';
 import { Link } from 'react-scroll';
-import contactImg from '../assets/contact.png';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
 
   return (
     <nav className='navbar'>
       <img src={logo} alt="logo" className='logo' />
       <div className='desktopMenu'>
-        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
-        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>About</Link>
-        <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem'>Portfolio</Link>
-        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500} className='desktopMenuListItem'>Contact</Link>
+        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem' onClick={closeMenu}>Home</Link>
+        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem' onClick={closeMenu}>About</Link>
+        <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='desktopMenuListItem' onClick={closeMenu}>Portfolio</Link>
+        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500} className='desktopMenuListItem' onClick={closeMenu}>Contact</Link>
       </div>
       
-             <Link to="contact" smooth={true} offset={-100} duration={500}><button className='contactBtn'> Contact</button></Link>
-
+      <Link to="contact" smooth={true} offset={-100} duration={500}><button className='contactBtn'>Contact</button></Link>
 
       <img src={menu} alt="mobile menu" className='mobMenu' onClick={() => setShowMenu(!showMenu)} />
       
       <div className='navMenu' style={{ display: showMenu ? 'flex' : 'none' }}>
-        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Home</Link>
-        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>About</Link>
-        <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Portfolio</Link>
-        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500} className='listItem' onClick={() => setShowMenu(false)}>Contact</Link>
+        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='listItem' onClick={closeMenu}>Home</Link>
+        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={closeMenu}>About</Link>
+        <Link activeClass='active' to='works' spy={true} smooth={true} offset={-50} duration={500} className='listItem' onClick={closeMenu}>Portfolio</Link>
+        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-80} duration={500} className='listItem' onClick={closeMenu}>Contact</Link>
       </div>
     </nav>
   );
